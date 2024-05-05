@@ -65,9 +65,9 @@ PMC8::PMC8()
 
     DBG_SCOPE = INDI::Logger::getInstance().addDebugLevel("Scope Verbose", "SCOPE");
 
-    SetTelescopeCapability(TELESCOPE_CAN_PARK | TELESCOPE_CAN_SYNC | TELESCOPE_CAN_GOTO | TELESCOPE_CAN_ABORT |
+    SetTelescopeCapability(TELESCOPE_CAN_PARK | TELESCOPE_CAN_SYNC | TELESCOPE_CAN_GOTO | TELESCOPE_CAN_ABORT | 
                            TELESCOPE_HAS_TRACK_MODE | TELESCOPE_CAN_CONTROL_TRACK | TELESCOPE_HAS_TRACK_RATE |
-                           TELESCOPE_HAS_LOCATION,
+                           TELESCOPE_HAS_LOCATION | TELESCOPE_HAS_PIER_SIDE,
                            9);
 
     setVersion(PMC8_VERSION_MAJOR, PMC8_VERSION_MINOR);
